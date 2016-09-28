@@ -1,0 +1,49 @@
+package test;
+
+import java.util.*;
+
+public class test {
+	public static void main(String [] args) {
+		
+		// declare consonants and vowels array list's:
+		String consonants, vowels;
+		//ArrayList<String> vowels = new ArrayList<String>();
+		//ArrayList<String> consonants = new ArrayList<String>();
+		// declare alphabet array:
+		String[] alphabet = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "M", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+
+		// for loop to go through the alphabet array:
+		for(int x = 0; x < alphabet.length; x++) {		
+			switch(alphabet[x]) {
+				case "a":
+					vowels = alphabet[x] + ", ";
+					break;
+				case "e":
+					vowels = vowels + alphabet[x] + ", ";
+					break;
+				case "i":
+					//vowels.add(alphabet[x]);
+					break;
+				case "o":
+					//vowels.add(alphabet[x]);
+					break;
+				case "u":
+					//vowels.add(alphabet[x]);
+					break;
+				case "y":
+					//vowels.add(alphabet[x]);
+					break;
+				default:
+					//consonants.add(alphabet[x]);
+			} // end of switch statement.
+		} // end for loop.
+		
+		// Print vowels array list:
+		System.out.println(vowels);
+		// Print consonants array list:
+		System.out.println(" ");
+		
+		//for(int x = 0; x < consonants.size(); x++) {
+		//	System.out.print(consonants.get(x) + ", ");
+		}
+	}

@@ -1,0 +1,41 @@
+package test;
+public class test {
+	public static void main(String [] args) {
+		
+		// declare consonants and vowels:
+		String consonants = "", vowels = "";
+		// declare alphabet array:
+		String[] alphabet = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "M", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+
+		// for loop to go through the alphabet array:
+		for(int x = 0; x < alphabet.length; x++) {		
+			switch(alphabet[x]) {
+				case "a":
+					vowels = alphabet[x] + ", ";
+					break;
+				case "e":
+					vowels = vowels + alphabet[x] + ", ";
+					break;
+				case "i":
+					vowels = vowels + alphabet[x] + ", ";
+					break;
+				case "o":
+					vowels = vowels + alphabet[x] + ", ";
+					break;
+				case "u":
+					vowels = vowels + alphabet[x] + ", ";
+					break;
+				case "y":
+					vowels = vowels + alphabet[x] + ", ";
+					break;
+				default:
+					consonants = consonants + alphabet[x] + ", ";
+			} // end of switch statement.
+		} // end for loop.
+		
+		// Print vowels array list:
+		System.out.println(vowels);
+		// Print consonants array list:
+		System.out.println(consonants);
+		}
+	}
